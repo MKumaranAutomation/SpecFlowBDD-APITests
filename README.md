@@ -1,2 +1,2 @@
 # SpecFlowBDD-APITests
-API Integration Tes Frmaework Using SpecFlowBDD
+API Integration Tes Framework Using SpecFlowBDD
