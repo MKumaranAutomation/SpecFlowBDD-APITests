@@ -11,6 +11,7 @@
           "Microsoft.NET.Test.Sdk": "16.4.0",
           "NUnit3TestAdapter": "3.15.1",
           "Pickles": "2.20.1",
+          "RestSharp": "106.11.4",
           "SpecFlow": "3.3.30",
           "SpecFlow.Assist.Dynamic": "1.4.2",
           "SpecFlow.NUnit": "3.3.30",
@@ -445,6 +446,14 @@
         }
       },
       "Pickles/2.20.1": {},
+      "RestSharp/106.11.4": {
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
+            "assemblyVersion": "106.11.4.0",
+            "fileVersion": "106.11.4.0"
+          }
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
@@ -1408,6 +1417,13 @@
       "sha512": "sha512-tumaaRQJLx2uk9bKv55x9NFF7yGBvSfBQTOijWr+1m6B1xy6bzofgdMWBcoCeOpeMp3tilmY2TmnlKrUQZj93g==",
       "path": "pickles/2.20.1",
       "hashPath": "pickles.2.20.1.nupkg.sha512"
+    },
+    "RestSharp/106.11.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vx35q52cM3UQNOiN3UqSQ9U7I5UeoyzVmjsWKQxOxn6FVu+n01+SNwhxc/jvf92WPBmmwzTV4VYTeTg4KviJdA==",
+      "path": "restsharp/106.11.4",
+      "hashPath": "restsharp.106.11.4.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",

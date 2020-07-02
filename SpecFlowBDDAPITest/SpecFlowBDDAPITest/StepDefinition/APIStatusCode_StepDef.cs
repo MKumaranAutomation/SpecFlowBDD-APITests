@@ -1,45 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TechTalk.SpecFlow;
-
-namespace SpecFlowBDDAPITest.StepDefinition
+﻿namespace SpecFlowBDDAPITest.StepDefinition
 {
+    using Newtonsoft.Json;
+    using NUnit.Framework;
+    using RestSharp;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using TechTalk.SpecFlow;
+
+
 	[Binding]
 	public sealed class APIStatusCode_StepDef
 	{
-		// For additional details on SpecFlow step definitions see https://go.specflow.org/doc-stepdef
 
-		private readonly ScenarioContext context;
+        private IRestResponse response;
+        private ValidateResponse json_res;
+        private RestClient client;
+        private RestRequest request;
 
-		public APIStatusCode_StepDef(ScenarioContext injectedContext)
-		{
-			context = injectedContext;
-		}
 
-        [Given(@"API End Point")]
-        public void GivenAPIEndPoint()
+        [Given(@"API End Point '(.*)'")]
+        public void GivenAPIEndPoint(string apiEndPoint)
         {
-            ScenarioContext.Current.Pending();
+            client = new RestClient(apiEndPoint);
         }
 
         [Given(@"pass the method as Get")]
         public void GivenPassTheMethodAsGet()
         {
-            ScenarioContext.Current.Pending();
+            request = new RestRequest(Method.GET);
         }
 
         [When(@"I press send")]
         public void WhenIPressSend()
         {
-            ScenarioContext.Current.Pending();
+            response = client.Execute(request);
+            json_res = JsonConvert.DeserializeObject<ValidateResponse>(response.Content);
         }
 
-        [Then(@"the Status Code should be OK/(.*)  on API Response")]
-        public void ThenTheStatusCodeShouldBeOKOnAPIResponse(int p0)
+        [Then(@"the Status Code should be ""(.*)"" on API Response")]
+        public void ThenTheStatusCodeShouldBeOnAPIResponse(string statusCode)
         {
-            ScenarioContext.Current.Pending();
+            Assert.AreEqual(statusCode,response.StatusDescription);
+        }
+
+        [Then(@"Verify that the Total Users should be (.*)")]
+        public void ThenVerifyThatTheTotalUsersShouldBe(int totalCount)
+        {
+            Assert.AreEqual(totalCount, json_res.Total);
         }
 
     }

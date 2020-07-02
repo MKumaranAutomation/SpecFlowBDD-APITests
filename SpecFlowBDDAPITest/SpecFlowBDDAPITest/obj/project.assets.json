@@ -505,6 +505,15 @@
       "Pickles/2.20.1": {
         "type": "package"
       },
+      "RestSharp/106.11.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
         "runtimeTargets": {
@@ -2725,6 +2734,22 @@
         "tools/Strike.Jint.dll",
         "tools/System.IO.Abstractions.dll",
         "tools/init.ps1"
+      ]
+    },
+    "RestSharp/106.11.4": {
+      "sha512": "vx35q52cM3UQNOiN3UqSQ9U7I5UeoyzVmjsWKQxOxn6FVu+n01+SNwhxc/jvf92WPBmmwzTV4VYTeTg4KviJdA==",
+      "type": "package",
+      "path": "restsharp/106.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.11.4.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -6747,6 +6772,7 @@
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NUnit3TestAdapter >= 3.15.1",
       "Pickles >= 2.20.1",
+      "RestSharp >= 106.11.4",
       "SpecFlow >= 3.3.30",
       "SpecFlow.Assist.Dynamic >= 1.4.2",
       "SpecFlow.NUnit >= 3.3.30",
@@ -6806,6 +6832,10 @@
           "Pickles": {
             "target": "Package",
             "version": "[2.20.1, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[106.11.4, )"
           },
           "SpecFlow": {
             "target": "Package",

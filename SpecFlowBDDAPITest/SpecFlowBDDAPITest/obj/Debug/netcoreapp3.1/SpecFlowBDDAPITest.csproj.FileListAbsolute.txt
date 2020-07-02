@@ -104,3 +104,5 @@ E:\GitHub\SpecFlowBDD-APITests\SpecFlowBDDAPITest\SpecFlowBDDAPITest\obj\Debug\n
 E:\GitHub\SpecFlowBDD-APITests\SpecFlowBDDAPITest\SpecFlowBDDAPITest\obj\Debug\netcoreapp3.1\SpecFlowBDDAPITest.csproj.CopyComplete
 E:\GitHub\SpecFlowBDD-APITests\SpecFlowBDDAPITest\SpecFlowBDDAPITest\obj\Debug\netcoreapp3.1\SpecFlowBDDAPITest.dll
 E:\GitHub\SpecFlowBDD-APITests\SpecFlowBDDAPITest\SpecFlowBDDAPITest\obj\Debug\netcoreapp3.1\SpecFlowBDDAPITest.pdb
+E:\GitHub\SpecFlowBDD-APITests\SpecFlowBDDAPITest\SpecFlowBDDAPITest\bin\Debug\netcoreapp3.1\RestSharp.dll
+E:\GitHub\SpecFlowBDD-APITests\SpecFlowBDDAPITest\SpecFlowBDDAPITest\obj\Debug\netcoreapp3.1\SpecFlowBDDAPITest.csprojAssemblyReference.cache
